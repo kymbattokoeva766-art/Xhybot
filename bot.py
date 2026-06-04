@@ -497,4 +497,4 @@ async def how(call: types.CallbackQuery):
 
 @dp.callback_query(F.data == "support")
 async def support(call: types.CallbackQuery):
-    await call.answer("📞 " + SUPPORT_USERNAME
+    await call.answer("📞 " + SUPPORT_USERNAME + " (24/7)", show_alert=True)
